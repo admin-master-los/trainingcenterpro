@@ -24,9 +24,12 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
 
 import { HeroSection } from './HeroSection';
 import { ProblemSection } from './ProblemSection';
+import { HowItWorksSection } from './HowItWorksSection';
+import { TrustBenefitsSection } from './TrustBenefitsSection';
 import { FeaturesSection } from './FeaturesSection';
 import { TestimonialsSection } from './TestimonialsSection';
 import { PricingSection } from './PricingSection';
+import { ContactSection } from './ContactSection';
 import { CTASection } from './CTASection';
 
 interface LandingPageProps {
