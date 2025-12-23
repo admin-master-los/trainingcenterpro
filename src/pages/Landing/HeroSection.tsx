@@ -264,10 +264,11 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
                 
                 <iframe
                   className="w-full h-full"
-                  src="https://youtu.be/embed/0rGKQGLuA2A"
+                  src="https://www.youtube.com/embed/0rGKQGLuA2A?autoplay=1&rel=0"
                   title="Digitalisez vos formations : Gagnez 50% de temps avec TrainingCenter Pro"
                   id="video-presentation-title"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                   onLoad={() => setIsVideoLoaded(true)}
                 />
@@ -286,7 +287,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
                       Présentation TrainingCenter Pro
                     </h3>
                     <p className="text-gray-400 text-sm">
-                      Digitalisez vos formations : Gagnez 50% de temps avec TrainingCenter Pro
+                      Découvrez comment digitaliser votre activité de formation
                     </p>
                   </div>
                   <div className="text-pink-500 text-sm font-medium px-3 py-1 bg-pink-500/10 border border-pink-500/30 rounded-full">
