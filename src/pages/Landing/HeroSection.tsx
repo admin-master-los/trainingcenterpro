@@ -264,7 +264,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
                 
                 <iframe
                   className="w-full h-full"
-                  src="https://youtu.be/0rGKQGLuA2A?si=LMf0d03ByzLr3417"
+                  src="https://youtu.be/embed/0rGKQGLuA2A"
                   title="Digitalisez vos formations : Gagnez 50% de temps avec TrainingCenter Pro"
                   id="video-presentation-title"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
