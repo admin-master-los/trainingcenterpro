@@ -2,7 +2,9 @@ import { useState } from 'react';
 import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
 import { LandingPage } from './pages/Landing';
+import { RoleSelectionPage } from './pages/RoleSelection';
 import { CatalogPage } from './pages/Catalog';
+import { TrainerPage } from './pages/Trainer';
 import { RegistrationPage } from './pages/Registration';
 import { DashboardPage } from './pages/Dashboard';
 import { StudentPage } from './pages/Student';
@@ -22,7 +24,9 @@ function App() {
       <Navigation currentPage={currentPage} onNavigate={handleNavigate} />
 
       {currentPage === 'home' && <LandingPage onNavigate={handleNavigate} />}
+      {currentPage === 'role-selection' && <RoleSelectionPage onNavigate={handleNavigate} />}
       {currentPage === 'catalog' && <CatalogPage onNavigate={handleNavigate} />}
+      {currentPage === 'trainer' && <TrainerPage onNavigate={handleNavigate} />}
       {currentPage === 'registration' && <RegistrationPage training={pageData?.training} onNavigate={handleNavigate} />}
       {currentPage === 'dashboard' && <DashboardPage />}
       {currentPage === 'student' && <StudentPage />}

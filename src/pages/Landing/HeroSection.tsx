@@ -46,7 +46,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             <Button
               size="lg"
               icon={ArrowRight}
-              onClick={() => onNavigate('catalog')}
+              onClick={() => onNavigate('role-selection')}
             >
               {hero.cta}
             </Button>

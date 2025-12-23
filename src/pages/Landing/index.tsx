@@ -22,14 +22,11 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
   );
 }*/}
 
-import { EnhancedHeroSection } from './EnhancedHeroSection';
+import { HeroSection } from './HeroSection';
 import { ProblemSection } from './ProblemSection';
-import { HowItWorksSection } from './HowItWorksSection';
 import { FeaturesSection } from './FeaturesSection';
-import { TrustBenefitsSection } from './TrustBenefitsSection';
 import { TestimonialsSection } from './TestimonialsSection';
 import { PricingSection } from './PricingSection';
-import { ContactSection } from './ContactSection';
 import { CTASection } from './CTASection';
 
 interface LandingPageProps {
@@ -39,14 +36,11 @@ interface LandingPageProps {
 export function LandingPage({ onNavigate }: LandingPageProps) {
   return (
     <div>
-      <EnhancedHeroSection onNavigate={onNavigate} />
+      <HeroSection onNavigate={onNavigate} />
       <ProblemSection />
-      <HowItWorksSection />
-      <TrustBenefitsSection />
       <FeaturesSection />
       <TestimonialsSection />
-      <PricingSection />
-      <ContactSection />
+      <PricingSection onNavigate={onNavigate} />
       <CTASection onNavigate={onNavigate} />
     </div>
   );

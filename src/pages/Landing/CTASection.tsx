@@ -38,7 +38,7 @@ export function CTASection({ onNavigate }: CTASectionProps) {
             <Button
               size="lg"
               icon={ArrowRight}
-              onClick={() => onNavigate('catalog')}
+              onClick={() => onNavigate('role-selection')}
             >
               {cta.final.cta}
             </Button>

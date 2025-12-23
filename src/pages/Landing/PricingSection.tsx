@@ -4,7 +4,11 @@ import { Button } from '../../components/Button';
 import { Badge } from '../../components/Badge';
 import { platformContent } from '../../data/platformContent';
 
-export function PricingSection() {
+interface PricingSectionProps {
+  onNavigate?: (page: string) => void;
+}
+
+export function PricingSection({ onNavigate }: PricingSectionProps) {
   const { pricing } = platformContent;
 
   return (
@@ -71,6 +75,7 @@ export function PricingSection() {
                 variant={plan.popular ? 'primary' : 'secondary'}
                 size="lg"
                 className="mb-6"
+                onClick={() => onNavigate?.('role-selection')}
               >
                 {plan.cta}
               </Button>
