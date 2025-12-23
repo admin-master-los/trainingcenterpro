@@ -14,7 +14,8 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
   const navItems = [
     { label: 'Accueil', page: 'home' },
     { label: 'Catalogue', page: 'catalog' },
-    { label: 'Dashboard', page: 'dashboard' }
+    { label: 'Dashboard', page: 'dashboard' },
+    { label: 'Espace Étudiant', page: 'student' }
   ];
 
   return (

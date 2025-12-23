@@ -1,4 +1,4 @@
-import { HeroSection } from './HeroSection';
+{/*import { HeroSection } from './HeroSection';
 import { ProblemSection } from './ProblemSection';
 import { FeaturesSection } from './FeaturesSection';
 import { TestimonialsSection } from './TestimonialsSection';
@@ -17,6 +17,36 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
       <FeaturesSection />
       <TestimonialsSection />
       <PricingSection />
+      <CTASection onNavigate={onNavigate} />
+    </div>
+  );
+}*/}
+
+import { EnhancedHeroSection } from './EnhancedHeroSection';
+import { ProblemSection } from './ProblemSection';
+import { HowItWorksSection } from './HowItWorksSection';
+import { FeaturesSection } from './FeaturesSection';
+import { TrustBenefitsSection } from './TrustBenefitsSection';
+import { TestimonialsSection } from './TestimonialsSection';
+import { PricingSection } from './PricingSection';
+import { ContactSection } from './ContactSection';
+import { CTASection } from './CTASection';
+
+interface LandingPageProps {
+  onNavigate: (page: string) => void;
+}
+
+export function LandingPage({ onNavigate }: LandingPageProps) {
+  return (
+    <div>
+      <EnhancedHeroSection onNavigate={onNavigate} />
+      <ProblemSection />
+      <HowItWorksSection />
+      <TrustBenefitsSection />
+      <FeaturesSection />
+      <TestimonialsSection />
+      <PricingSection />
+      <ContactSection />
       <CTASection onNavigate={onNavigate} />
     </div>
   );

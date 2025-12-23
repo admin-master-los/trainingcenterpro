@@ -5,6 +5,7 @@ import { LandingPage } from './pages/Landing';
 import { CatalogPage } from './pages/Catalog';
 import { RegistrationPage } from './pages/Registration';
 import { DashboardPage } from './pages/Dashboard';
+import { StudentPage } from './pages/Student';
 
 function App() {
   const [currentPage, setCurrentPage] = useState<string>('home');
@@ -24,6 +25,7 @@ function App() {
       {currentPage === 'catalog' && <CatalogPage onNavigate={handleNavigate} />}
       {currentPage === 'registration' && <RegistrationPage training={pageData?.training} onNavigate={handleNavigate} />}
       {currentPage === 'dashboard' && <DashboardPage />}
+      {currentPage === 'student' && <StudentPage />}
 
       <Footer />
     </div>
