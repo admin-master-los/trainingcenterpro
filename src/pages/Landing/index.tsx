@@ -38,9 +38,12 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
     <div>
       <HeroSection onNavigate={onNavigate} />
       <ProblemSection />
+      <HowItWorksSection />
+      <TrustBenefitsSection />
       <FeaturesSection />
       <TestimonialsSection />
       <PricingSection onNavigate={onNavigate} />
+      <ContactSection />
       <CTASection onNavigate={onNavigate} />
     </div>
   );
