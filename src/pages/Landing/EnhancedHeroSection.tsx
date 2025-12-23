@@ -197,8 +197,8 @@ export function EnhancedHeroSection({ onNavigate }: EnhancedHeroProps) {
             <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-                title="Demo video"
+                src="https://youtu.be/0rGKQGLuA2A"
+                title="Digitalisez vos formations : Gagnez 50% de temps avec TrainingCenter Pro"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
